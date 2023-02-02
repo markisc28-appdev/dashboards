@@ -1,0 +1,11 @@
+<h1>Currency pairs</h1>
+
+<div>Go <a href = "/">back</a><div>
+
+<ul>
+  <% @code_array.each do |code|%> 
+    <li>
+      <a href = "/forex/<%= code%>">Convert 1 <%= code%> to...
+    </li>
+  <% end %>
+</ul>
