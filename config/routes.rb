@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get("/", {:controller => "exra", :action => "home"})
   get("/forex", {:controller => "exra", :action => "get_rates"})
   get("forex/:firstrate", {:controller => "exra", :action => "exchange_rates"})
+  get("forex/:firstrate/:secondrate", {:controller => "exra", :action => "exchange"})
 end
